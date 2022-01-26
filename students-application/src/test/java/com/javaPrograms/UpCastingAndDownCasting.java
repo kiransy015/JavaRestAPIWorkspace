@@ -1,4 +1,4 @@
-package com.students.tests;
+package com.javaPrograms;
 
 import java.util.HashSet;
 

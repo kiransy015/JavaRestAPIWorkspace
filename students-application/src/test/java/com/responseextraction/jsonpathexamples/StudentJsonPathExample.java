@@ -28,7 +28,7 @@ public class StudentJsonPathExample {
 		System.out.println("-------Print first 3 Student ids---------");
 		
 		ArrayList<Integer> Studentids = 	given()
-											.param("programme", "Computer Science")
+											//.param("programme", "Computer Science")
 											.param("limit", 3)
 									.when()
 										.get("/list")
@@ -51,7 +51,7 @@ public class StudentJsonPathExample {
 											.get("/list")
 										.then().extract().path("courses");
 		
-		System.out.println("List of Courses :"+courses.get(0));
+		System.out.println("List of Courses :"+courses);
 		System.out.println("Courses of First student :"+courses.get(0));
 		System.out.println("Courses of Second student :"+courses.get(1));
 		System.out.println("Courses of Third student :"+courses.get(2));
@@ -79,8 +79,8 @@ public class StudentJsonPathExample {
 		System.out.println("-------Print all courses of all students---------");
 		
 		ArrayList<Integer> courses = given()
-										.param("programme", "Computer Science")
-										.param("limit", 3)
+										//.param("programme", "Computer Science")
+										//.param("limit", 3)
 									.when()
 										.get("/list")
 									.then()
@@ -114,8 +114,8 @@ public class StudentJsonPathExample {
 		System.out.println("-------Get all the firstname from the response---------");
 		
 		ArrayList<String> firstnames = given()
-											.param("programme", "Computer Science")
-											.param("limit", 3)
+											//.param("programme", "Computer Science")
+											//.param("limit", 3)
 										.when()
 											.get("/list")
 										.then()
@@ -131,7 +131,7 @@ public class StudentJsonPathExample {
 	public void test007(){
 		System.out.println("-------Find all values whose programme stated with 'Computer Science'---------");
 		ArrayList<String> allvalues = 	given()
-										.param("programme", "Computer Science")
+										//.param("programme", "Computer Science")
 										.param("limit", 3)
 									.when()
 										.get("/list")
@@ -149,7 +149,7 @@ public class StudentJsonPathExample {
 		System.out.println("-------Get the lastname of all student whose programme stated with 'Computer Science'---------");
 		
 		ArrayList<String> allvalues = 	given()
-											.param("programme", "Computer Science")
+											//.param("programme", "Computer Science")
 											.param("limit", 3)
 										.when()
 											.get("/list")
@@ -167,7 +167,7 @@ public class StudentJsonPathExample {
 		System.out.println("-------Get the lastname of all student whose id is greater than 2---------");
 		
 		ArrayList<String> alllastnames = given()
-											.param("programme", "Computer Science")
+											//.param("programme", "Computer Science")
 											.param("limit", 3)
 										.when()
 											.get("/list")
@@ -185,7 +185,7 @@ public class StudentJsonPathExample {
 		System.out.println("-------Get all values whose programme starts with 'Computer'---------");
 		
 		ArrayList<String> allvalues = 	given()
-											.param("programme", "Computer Science")
+											//.param("programme", "Computer Science")
 											.param("limit", 3)
 										.when()
 											.get("/list")
@@ -203,7 +203,7 @@ public class StudentJsonPathExample {
 		System.out.println("-------Get all values whose programme ends with 'Computer'---------");
 		
 		ArrayList<String> allvalues = 	given()
-											.param("programme", "Computer Science")
+											//.param("programme", "Computer Science")
 											.param("limit", 3)
 										.when()
 											.get("/list")

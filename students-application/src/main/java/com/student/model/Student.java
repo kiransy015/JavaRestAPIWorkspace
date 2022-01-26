@@ -4,6 +4,8 @@ import java.util.List;
 
 public class Student {
 
+	private Integer id;
+	
 	private String firstName;
 	
 	private String lastName;
@@ -52,6 +54,20 @@ public class Student {
 
 	public void setCourses(List<String> courses) {
 		this.courses = courses;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Id : "+this.getId()+"\n"+"FirstName : "+this.getFirstName()+"\n"+"LastName : "+this.getLastName()+"\n"+"Email : "+this.getEmail()+"\n"+"Programme : "+this.getProgramme()+"\n"+"Courses : "+this.getCourses();
 	}
 	
 	

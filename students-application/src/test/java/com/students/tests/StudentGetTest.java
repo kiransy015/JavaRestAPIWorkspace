@@ -12,20 +12,20 @@ import static com.jayway.restassured.RestAssured.*;
 
 public class StudentGetTest extends TestBase{
 	
-	//@Test
+	@Test
 	public void getAllStudentInformation(){
 		
-		/*Response response = given()
+		Response response = given()
 							.when()
 								.get("/list");
-		System.out.println(response.body().prettyPrint());*/
+		System.out.println(response.body().prettyPrint());
 		
 		//validate the status code
-		given()
+		/*given()
 		.when()
 			.get("/list")
 		.then()
-			.statusCode(200);
+			.statusCode(200);*/
 	}
 	
 	
@@ -61,20 +61,5 @@ public class StudentGetTest extends TestBase{
 		System.out.println(response.body().prettyPrint());
 							
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

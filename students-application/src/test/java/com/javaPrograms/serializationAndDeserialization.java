@@ -68,7 +68,11 @@ public class serializationAndDeserialization extends TestBase {
 						   .when()
 						    	.get(url1).as(Student.class);
 		
-		System.out.println("Student 1 details :"+"\n"+stddtl.toString());
+		System.out.println("Student 1 details :"+"\n"+stddtl.getFirstName().toString());
+		System.out.println("Student 1 details :"+"\n"+stddtl.getLastName().toString());
+		System.out.println("Student 1 details :"+"\n"+stddtl.getEmail().toString());
+		System.out.println("Student 1 details :"+"\n"+stddtl.getProgramme().toString());
+		System.out.println("Student 1 details :"+"\n"+stddtl.getCourses().toString());
 		
 	}
 	
